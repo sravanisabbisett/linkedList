@@ -47,6 +47,7 @@ public class LinkedListTest {
                 MyLinkedList.head.getNext().equals(mySecondNode)&&
                 mySecondNode.getNext().equals(myThirdNode);
         Assert.assertTrue(result);
+        linkedList.PrintMyNodes();
 
     }
     @Test
@@ -87,9 +88,10 @@ public class LinkedListTest {
         linkedList.add(myFirstNode);
         linkedList.append(mySecondNode);
         linkedList.append(myThirdNode);
-        INode<Integer> popLastNode=linkedList.popLast();
-        linkedList.PrintMyNodes();
-        Assert.assertEquals(myThirdNode,popLastNode);
+        linkedList.popLast();
+        boolean result=linkedList.head.equals(myFirstNode)&&
+                linkedList.tail.equals(mySecondNode);
+        Assert.assertTrue(result);
     }
     @Test
     public void given3numbersWhenSearchingShouldPassTheLinkedList() {

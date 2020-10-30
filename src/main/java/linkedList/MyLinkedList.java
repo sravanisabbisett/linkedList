@@ -62,8 +62,8 @@ public class MyLinkedList<K> {
         while (!tempNode.getNext().equals(tail)){
             tempNode=tempNode.getNext();
         }
+        tempNode.setNext(null);
         this.tail=tempNode;
-        tempNode=tempNode.getNext();
         return tempNode;
     }
 
@@ -98,4 +98,14 @@ public class MyLinkedList<K> {
         }
         return size;
     }
+
+    /*public void InascendingOrder(INode newNode){
+        System.out.println(newNode.getKey());
+        if(this.head==null){
+            this.head=newNode;
+        }else if(this.head.getKey().compareTo()){
+
+
+        }
+    }*/
 }
