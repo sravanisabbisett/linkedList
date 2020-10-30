@@ -78,4 +78,18 @@ public class LinkedListTest {
         Assert.assertEquals(MyFirstNode,poppedNode);
 
     }
+    @Test
+    public void given3NumbersDeletingLastElementShouldPassTheLinkedList() {
+        MyNode<Integer> MyFirstNode=new MyNode<>(56);
+        MyNode<Integer> MySecondNode=new MyNode<>(30);
+        MyNode<Integer> MyThirdNode=new MyNode<>(70);
+        MyLinkedList linkedList=new MyLinkedList();
+        linkedList.add(MyFirstNode);
+        linkedList.append(MySecondNode);
+        linkedList.append(MyThirdNode);
+        INode<Integer> popLastNode=linkedList.popLast();
+        linkedList.PrintMyNodes();
+        Assert.assertEquals(MyThirdNode,popLastNode);
+    }
+
 }
