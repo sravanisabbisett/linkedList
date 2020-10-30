@@ -1,6 +1,8 @@
 package linkedList;
 
-public class MyLinkedList<K> {
+import java.util.Comparator;
+
+public class MyLinkedList<K extends Comparable<K>> {
     public static INode head;
     public static INode tail;
     public K key;
@@ -81,7 +83,7 @@ public class MyLinkedList<K> {
         insert(search(key),newNode);
     }
 
-    public void deleteInMiddle(K key,INode previous){
+    public void deleteInMiddle(K key){
         INode tempNode=this.head;
         while (!tempNode.getNext().equals(key)){
             tempNode=tempNode.getNext();
@@ -98,14 +100,4 @@ public class MyLinkedList<K> {
         }
         return size;
     }
-
-    /*public void InascendingOrder(INode newNode){
-        System.out.println(newNode.getKey());
-        if(this.head==null){
-            this.head=newNode;
-        }else if(this.head.getKey().compareTo()){
-
-
-        }
-    }*/
 }

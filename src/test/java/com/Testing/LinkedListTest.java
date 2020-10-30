@@ -133,7 +133,7 @@ public class LinkedListTest {
         linkedList.append(mySecondNode);
         linkedList.append(myThirdNode);
         linkedList.append(myFourthNode);
-        linkedList.deleteInMiddle(myThirdNode,mySecondNode);
+        linkedList.deleteInMiddle(myThirdNode);
         boolean result=linkedList.head.equals(myFirstNode)&&
                 linkedList.head.getNext().equals(mySecondNode);
                 linkedList.tail.equals(myFourthNode);
