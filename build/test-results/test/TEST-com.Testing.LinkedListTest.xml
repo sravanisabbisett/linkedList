@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.Testing.LinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-30T06:16:18" hostname="DESKTOP-62HQPBS" time="0.005">
+<testsuite name="com.Testing.LinkedListTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-10-30T06:30:36" hostname="DESKTOP-62HQPBS" time="0.027">
   <properties/>
-  <testcase name="given4NumbersWhenInsertingInMiddleShouldPassTheLinkedList" classname="com.Testing.LinkedListTest" time="0.005"/>
+  <testcase name="given3numbersWhenSearchingShouldPassTheLinkedList" classname="com.Testing.LinkedListTest" time="0.004"/>
+  <testcase name="given3NumbersWhenLinkedShouldPassedLinkedListTest" classname="com.Testing.LinkedListTest" time="0.0"/>
+  <testcase name="given4NumbersWhenInsertingInMiddleShouldPassTheLinkedList" classname="com.Testing.LinkedListTest" time="0.003"/>
+  <testcase name="given3NumbersWhenAddedToLinkedListShouldBeAddAtTop" classname="com.Testing.LinkedListTest" time="0.0"/>
+  <testcase name="given3NumberswhenDeletingFirstElementShouldPassTheLinkedList" classname="com.Testing.LinkedListTest" time="0.001"/>
+  <testcase name="given3NumbersDeletingLastElementShouldPassTheLinkedList" classname="com.Testing.LinkedListTest" time="0.001"/>
+  <testcase name="given3NumbersWhenAddedToLinkedListShouldBeaddAtLast" classname="com.Testing.LinkedListTest" time="0.001"/>
+  <testcase name="given3NumbersWhenInsertingSecondInBetweenShouldPassLinkedListResult" classname="com.Testing.LinkedListTest" time="0.003"/>
   <system-out><![CDATA[MyNodes:56304070
+MyNodes:563070
+MyNodes:3070
+MyNodes:5630->70
+MyNodes:563070
+MyNodes:563070
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
