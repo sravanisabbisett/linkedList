@@ -1,3 +1,5 @@
+package com.Testing;
+
 import linkedList.INode;
 import linkedList.MyNode;
 import linkedList.MyStack;
@@ -30,7 +32,7 @@ public class stackTest {
         stack.push(mySecondNode);
         stack.push(myThirdNode);
         int size=stack.size();
-        stack.emptyingTheStack(size);
+        stack.emptyingTheStack();
         boolean result=stack.IsEmpty();
         Assert.assertTrue(result);
     }
