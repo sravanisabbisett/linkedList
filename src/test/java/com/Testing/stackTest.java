@@ -23,7 +23,7 @@ public class stackTest {
 
     }
     @Test
-    public void givenThreeNumbersInStackWhenPopperOutshouldmatchwithLastAddedNode(){
+    public void givenThreeNumbersInStackWhenPopperOutshouldMatchwithLastAddedNode(){
         MyStack stack=new MyStack();
         MyNode<Integer> myFirstNode=new MyNode<>(70);
         MyNode<Integer> mySecondNode=new MyNode<>(30);

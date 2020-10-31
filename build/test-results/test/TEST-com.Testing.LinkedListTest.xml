@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.Testing.LinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-31T07:40:39" hostname="DESKTOP-62HQPBS" time="0.008">
+  <properties/>
+  <testcase name="givenFourNumbers_WhenAddedInLinkedList_ShouldAddedInAscendingOrder" classname="com.Testing.LinkedListTest" time="0.008"/>
+  <system-out><![CDATA[Ascending order : 
+MyNodes:56
+Ascending order : 
+MyNodes:30->56
+Ascending order : 
+MyNodes:30->40->56
+Ascending order : 
+MyNodes:30->40->56->70
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

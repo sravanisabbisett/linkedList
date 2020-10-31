@@ -3,9 +3,9 @@ package linkedList;
 import java.util.Comparator;
 
 public class MyLinkedList<K extends Comparable<K>> {
-    public static INode head;
-    public static INode tail;
-    public K key;
+    public   INode head;
+    public  INode tail;
+    public  K key;
 
     public MyLinkedList() {
         this.head=null;
@@ -69,7 +69,7 @@ public class MyLinkedList<K extends Comparable<K>> {
         return tempNode;
     }
 
-    public  INode search(K key ) {
+    public  INode search(INode key ) {
         INode tempNode=this.head;
         while (tempNode!=null){
             if(tempNode.equals(key)){
@@ -79,11 +79,11 @@ public class MyLinkedList<K extends Comparable<K>> {
         }
         return null;
     }
-    public void inserInmiddle(K key,INode newNode){
+    public void inserInmiddle(INode key,INode newNode){
         insert(search(key),newNode);
     }
 
-    public void deleteInMiddle(K key){
+    public void deleteInMiddle(INode key){
         INode tempNode=this.head;
         while (!tempNode.getNext().equals(key)){
             tempNode=tempNode.getNext();
@@ -91,6 +91,7 @@ public class MyLinkedList<K extends Comparable<K>> {
         tempNode.setNext(tempNode.getNext().getNext());
         System.out.println("size of linklist:"+size());
     }
+
     public int size(){
         INode tempNode=this.head;
         int size=0;
@@ -100,5 +101,22 @@ public class MyLinkedList<K extends Comparable<K>> {
         }
         return size;
     }
-    
+
+    public void addInAscendingOrder(INode<K> newNode) {
+        if(this.head==null){
+            this.head=newNode;
+        } else if(((Comparable<K>)this.head.getKey()).compareTo(newNode.getKey()) > 0) {
+            newNode.setNext(head);
+            this.head = newNode;
+        } else {
+            INode<K> tempNode = this.head;
+            while(tempNode.getNext() != null && ((Comparable<K>) tempNode.getNext().getKey()).compareTo(newNode.getKey()) < 0){
+                tempNode = tempNode.getNext();
+            }
+            newNode.setNext(tempNode.getNext());
+            tempNode.setNext(newNode);
+        }
+        System.out.println("Ascending order : ");
+        PrintMyNodes();
+    }
 }
