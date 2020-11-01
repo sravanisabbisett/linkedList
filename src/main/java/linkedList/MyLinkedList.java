@@ -2,7 +2,7 @@ package linkedList;
 
 import java.util.Comparator;
 
-public class MyLinkedList<K extends Comparable<K>> {
+public class MyLinkedList<K> {
     public   INode head;
     public  INode tail;
     public  K key;
@@ -69,17 +69,17 @@ public class MyLinkedList<K extends Comparable<K>> {
         return tempNode;
     }
 
-    public  INode search(INode key ) {
-        INode tempNode=this.head;
-        while (tempNode!=null){
-            if(tempNode.equals(key)){
-                return tempNode;
+    public INode search(K key) {
+        INode tempNode = this.head;
+            while (tempNode != null) {
+                if (tempNode.getKey().equals(key) || tempNode.equals(key)) {
+                    return tempNode;
+                }
+                tempNode = tempNode.getNext();
             }
-            tempNode=tempNode.getNext();
-        }
-        return null;
+            return null;
     }
-    public void inserInmiddle(INode key,INode newNode){
+    public void inserInmiddle(K key,INode newNode){
         insert(search(key),newNode);
     }
 
@@ -118,5 +118,9 @@ public class MyLinkedList<K extends Comparable<K>> {
         }
         System.out.println("Ascending order : ");
         PrintMyNodes();
+    }
+
+    public String toString(){
+        return "myLinkedListNodes("+head+')';
     }
 }

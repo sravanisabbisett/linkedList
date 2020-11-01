@@ -1,8 +1,19 @@
-Ascending order : 
-MyNodes:56
-Ascending order : 
-MyNodes:30->56
-Ascending order : 
-MyNodes:30->40->56
-Ascending order : 
-MyNodes:30->40->56->70
+MyNodes:56->30->40->70
+MyNodes:56->30->70
+MyNodes:30->70
+MyNodes:56->30
+size of linklist:3
+MyNodes:56->30->70
+	Ascending order : 
+	MyNodes:56
+	Ascending order : 
+	MyNodes:30->56
+	Ascending order : 
+	MyNodes:30->40->56
+	Ascending order : 
+	MyNodes:30->40->56->70
+
+MyNodes:56->30->70
+
+MyNodes:56->30->70
+MyNodes:56->30->70
