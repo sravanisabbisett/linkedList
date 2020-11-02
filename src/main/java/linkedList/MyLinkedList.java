@@ -83,7 +83,7 @@ public class MyLinkedList<K> {
         insert(search(key),newNode);
     }
 
-    public void deleteInMiddle(INode key){
+    public void deleteInMiddle(K key){
         INode tempNode=this.head;
         while (!tempNode.getNext().equals(key)){
             tempNode=tempNode.getNext();

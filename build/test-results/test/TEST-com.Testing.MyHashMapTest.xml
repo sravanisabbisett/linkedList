@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.Testing.MyHashMapTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-02T07:31:28" hostname="DESKTOP-62HQPBS" time="0.02">
+  <properties/>
+  <testcase name="givenSentenceWhenWords_AreAddedToListShouldReturnWordFrequency" classname="com.Testing.MyHashMapTest" time="0.02"/>
+  <system-out><![CDATA[17
+size after removing17
+MyHashMapNodes{myLinkedListNodes(MyMapNode{K=paranoidsV =1}-->MyMapNode{K=areV =2}-->MyMapNode{K=notV =1}-->MyMapNode{K=paranoidV =2}-->MyMapNode{K=becauseV =1}-->MyMapNode{K=theyV =2}-->MyMapNode{K=butbecauseV =1}-->MyMapNode{K=keepV =1}-->MyMapNode{K=puttingV =1}-->MyMapNode{K=themselvesV =1}-->MyMapNode{K=deliberatelyV =1}-->MyMapNode{K=intoV =1}-->MyMapNode{K=situationsV =1})}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
